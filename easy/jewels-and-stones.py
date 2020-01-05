@@ -27,7 +27,9 @@ class Solution:
 if __name__ == "__main__":
 
     sol = Solution()
+
     t1 = sol.numJewelsInStones(J="z", S="ZZ")
     assert(t1 == 0), "incorrect logic"
+
     t2 = sol.numJewelsInStones(J="aA", S="aAAbbbb")
     assert(t2 == 3), "incorrect logic"

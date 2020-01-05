@@ -21,8 +21,11 @@ class Solution:
         return ans
 
 if __name__=='__main__':
+
     sol = Solution()
+
     ans1 = sol.freqAlphabets(s="25#")
     assert (ans1 == 'y'), 'wrong logic'
+
     ans2 = sol.freqAlphabets(s="10#11#12")
     assert (ans2 == 'jkab'), 'wrong logic'

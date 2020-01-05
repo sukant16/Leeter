@@ -51,7 +51,9 @@ def toListNode(numbers):
     return ptr
 
 if __name__=='__main__':
+
     sol = Solution()
+
     ans1 = sol.getDecimalValue(head=toListNode([1,0,1]))
     assert (ans1 == 5), 'wrong'
 
