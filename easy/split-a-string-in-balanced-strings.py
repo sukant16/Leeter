@@ -22,17 +22,28 @@ Explanation: s can be split into "RL", "LLLRRR", "LR", each substring contains s
 
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
-        i = count = 0
-        j = 2
-        while i < len(s)-1:
-            if s[i:i+j].count('R') == s[i:i+j].count('L'):
+        count = out = 0
+        for c in s:
+            if c == 'R':
                 count += 1
-                i += j
-                j = 2
             else:
-                j += 2
+                count -= 1
+            if count == 0:
+                out += 1
+        return out
 
-        return count
+        # Better solution above (from another leetcode user")
+        # i = count = 0
+        # j = 2
+        # while i < len(s)-1:
+        #     if s[i:i+j].count('R') == s[i:i+j].count('L'):
+        #         count += 1
+        #         i += j
+        #         j = 2
+        #     else:
+        #         j += 2
+        #
+        # return count
 
 
 if __name__=="__main__":
