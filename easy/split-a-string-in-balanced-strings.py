@@ -33,6 +33,7 @@ class Solution:
         return out
 
         # Better solution above (from another leetcode user")
+        # my solution below:
         # i = count = 0
         # j = 2
         # while i < len(s)-1:
