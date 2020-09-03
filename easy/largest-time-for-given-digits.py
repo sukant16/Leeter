@@ -20,6 +20,7 @@ class Solution:
     def largestTimeFromDigits2(self, A):
         return max(["%d%d:%d%d" % t for t in itertools.permutations(A) if t[:2] < (2, 4) and t[2] < 6] or [""])
 
+
 if __name__== "__main__":
     sol = Solution()
     ans1 = sol.largestTimeFromDigits2([1, 2, 6, 4])
