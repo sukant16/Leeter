@@ -19,12 +19,12 @@ class Solution:
         n = len(nums)
 
         @lru_cache()
-        def helper(start, inc_sum=0):
+        def helper(start):
 
             if start >= n:
                 return 0
 
-            return max(helper(start + 2, inc_sum), helper(start + 3, inc_sum)) + nums[start]
+            return max(helper(start + 2), helper(start + 3)) + nums[start]
 
         return max(helper(0), helper(1))
 
