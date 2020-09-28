@@ -1,6 +1,7 @@
 from typing import List
 from collections import defaultdict
 
+
 class Solution:
     def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
         smart_trips = []
