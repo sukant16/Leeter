@@ -8,7 +8,8 @@ class Solution:
             for l in range(n):
                 mat[l][j] += 1
         return sum([sum(map(lambda x: x%2, row)) for row in mat])
-    
+
+
 if __name__ == '__main__':
     sol = Solution()
 
