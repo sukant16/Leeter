@@ -16,6 +16,11 @@ class Solution:
             start += 1
             end -= 1
 
+    def two_pointer(self, s: List[str]) -> None:
+        n = len(s)
+        for i in range(n // 2):
+            s[i], s[n - 1 - i] = s[n - 1 - i], s[i]
+
 
 if __name__=="__main__":
     sol = Solution()
